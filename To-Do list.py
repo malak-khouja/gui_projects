@@ -1,0 +1,28 @@
+import tkinter as tk    
+from tkinter import ttk
+
+win=tk.Tk()
+win.geometry("500x700")
+win.title("To-Do-list")
+tk.Label(win,text="To Do List").pack(anchor=tk.NW)
+tk.Label(win,text="Date").pack(side=tk.TOP,anchor=tk.NE,padx=90)
+text=tk.StringVar()
+ttk.Entry(win,textvariable=text).pack(side=tk.TOP,anchor=tk.NE)
+tk.Label(win,text="Top Priorities").pack(anchor=tk.W)
+text=tk.StringVar()
+ttk.Entry(win,textvariable=text).pack(anchor=tk.W,ipadx=40,ipady=100)
+tk.Label(win,text="To Do").pack(anchor=tk.W)
+text=tk.StringVar()
+ttk.Entry(win,textvariable=text).pack(anchor=tk.W,ipadx=40,ipady=100)
+tk.Label(win,text="Reminder")
+text=tk.StringVar()
+ttk.Entry(win,textvariable=text).pack()
+tk.Label(win,text="scheduled").pack(anchor=tk.E)
+text=tk.StringVar()
+ttk.Entry(win,textvariable=text).pack(anchor=tk.E)
+text=tk.StringVar()
+tk.Label(win,text="Notes").pack()
+text=tk.StringVar()
+ttk.Entry(win,textvariable=text).pack()
+
+win.mainloop()
